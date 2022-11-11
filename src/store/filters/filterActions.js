@@ -1,6 +1,6 @@
-export const ADD_FILTER = 'ADD_POSITIONS'
-export const REMOVE_FILTER = 'REMOVE_POSITIONS'
-export const CLEAR_FILTER = 'CLEAR_POSITIONS'
+export const ADD_FILTER = 'ADD_FILTER'
+export const REMOVE_FILTER = 'REMOVE_FILTER'
+export const CLEAR_FILTER = 'CLEAR_FILTER'
 
 export const addFilter = filter => ({
 	type: ADD_FILTER,
@@ -12,6 +12,6 @@ export const removeFilter = filter => ({
 	filter,
 })
 
-export const clearFilter =  {
+export const clearFilter = {
 	type: CLEAR_FILTER,
 }

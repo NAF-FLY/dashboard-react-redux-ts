@@ -1,5 +1,3 @@
-export const selectAllPositions = state => state.positions
-
 export const selectVisiblePositions = (state, filters = []) => {
 	if (filters.length === 0) return state.positions
 
