@@ -1,13 +1,15 @@
+import React from 'react'
+
 import { useSelector, useDispatch } from 'react-redux'
 
-import Badge from 'UI/Badge'
-import { Card } from 'UI/Card'
-import { Stack } from 'UI/Stack'
+import { Badge } from '../UI/Badge'
+import { Card } from '../UI/Card'
+import { Stack } from '../UI/Stack'
 
 import { selectFilters } from '../store/filters/filterSelectors'
 import { removeFilter, clearFilter } from '../store/filters/filterActions'
 
-const FilterPanel = () => {
+const FilterPanel = (): JSX.Element | null => {
 	const currentFilters = useSelector(selectFilters)
 	const dispatch = useDispatch()
 
